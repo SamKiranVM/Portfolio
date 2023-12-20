@@ -398,6 +398,9 @@ nav .fa-solid{
     background-image: url(assets/phone-me1.PNG);
     height: 100vh;
 }
+#about{
+    padding: 10px 0;
+}
 .header-text {
     margin-top: 30%;
     font-size: 16px;   
