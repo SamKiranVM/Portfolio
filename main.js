@@ -108,3 +108,34 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
 });
+
+// Scroll animation in about section
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    var isRightAnimVisible = false;
+    var isLeftAnimVisible = false;
+
+    function handleAnimation(element, animationClass, isVisible) {
+        if (!isVisible) {
+            element.classList.add(animationClass);
+            isVisible = true;
+        }
+    }
+
+    function checkVisibility(element, isVisible, animationClass) {
+        var rect = element.getBoundingClientRect();
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        if (rect.top <= windowHeight / 2 && rect.bottom >= 0) {
+            handleAnimation(element, animationClass, isVisible);
+        }
+    }
+
+    window.onscroll = function() {
+        checkVisibility(document.getElementById("rightAnimContainer"), isRightAnimVisible, "animate-right");
+
+        checkVisibility(document.getElementById("leftAnimContainer"), isLeftAnimVisible, "animate-left");
+    };
+
+});
