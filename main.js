@@ -15,24 +15,42 @@ document.addEventListener("DOMContentLoaded", function() {
 // Bar Graph
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("trigger").addEventListener("click", function () {
-      let duration = 0;
-      let elements = document.querySelectorAll(".fill");
-      
-      elements.forEach(function (element) {
-        duration = 1 + Math.floor(Math.random() * 20) / 10;
-        element.style.animation = `animate-positive ${duration}s`;
-        element.style.opacity = "1";
-      });
-    });
-  
+    var isAnimationVisible = false;
+
+    function handleScrollAnimation() {
+        if (!isAnimationVisible) {
+            let duration = 0;
+            let elements = document.querySelectorAll(".fill");
+
+            elements.forEach(function (element) {
+                duration = 1 + Math.floor(Math.random() * 20) / 10;
+                element.style.animation = `animate-positive ${duration}s`;
+                element.style.opacity = "1";
+            });
+
+            isAnimationVisible = true;
+        }
+    }
+
+
+    handleScrollAnimation();
+
+    window.onscroll = function () {
+       
+        handleScrollAnimation();
+    };
+
     document.getElementById("reset").addEventListener("click", function () {
-      document.querySelectorAll(".fill").forEach(function (element) {
-        element.style.animation = "";
-        element.style.opacity = "0";
-      });
+        document.querySelectorAll(".fill").forEach(function (element) {
+            element.style.animation = "";
+            element.style.opacity = "0";
+        });
+
+      
+        isAnimationVisible = false;
     });
 });
+
   
 
 //Side Bar
