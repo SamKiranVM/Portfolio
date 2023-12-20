@@ -460,6 +460,9 @@ nav ul .fa-solid{
     flex-basis: 35%;
     margin: auto;
 }
+.about-col-1 img{
+    content: url('assets/myImagePhone.JPG');
+}
 .about-col-2 {
     flex-basis: 80%; 
     margin: auto;
