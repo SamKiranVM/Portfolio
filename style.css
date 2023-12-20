@@ -293,6 +293,13 @@ nav ul li a:hover::after {
     border-radius: 50%;
     text-align: center;
 }
+.layer a{
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.layer a:hover{
+    transform: translateY(-20px);
+}
 .site:hover img{
     transform: scale(1.1);
 }
