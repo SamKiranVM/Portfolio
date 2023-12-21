@@ -470,7 +470,8 @@ nav ul .fa-solid{
 }
 .about-col-1 img{
     content: url('assets/myImagePhone.JPG');
-    width: 100%;
+    width: 80%;
+    height: 90%;
     display: block;
     margin: auto;
 }
