@@ -444,7 +444,7 @@ nav ul .fa-solid{
 .about-title {
     font-size: 30px;
     margin-top: 20px;
-    padding-left: 50px;
+    padding-left: 0;
 }
  .about-col-2 .about-des{
     text-align: center;
@@ -461,22 +461,21 @@ nav ul .fa-solid{
     font-size: 13px;
 }
 .about-col-1 {
-    flex-basis: 35%;
-    margin: auto;
+    flex-basis: 100%;
+    margin-bottom: 20px;
 }
 .about-col-1 img{
     content: url('assets/myImagePhone.JPG');
+    width: 100%;
 }
 .about-col-2 {
-    flex-basis: 80%; 
-    margin: auto;
-
+    flex-basis: 100%; 
 }
 .bars-wrap {
     margin: 50px auto 50px auto;
 }
 .bar {
-    width: 150%;
+    width: 100%;
 }
 .contact-left, .contact-right{
     flex-basis: 100%;
