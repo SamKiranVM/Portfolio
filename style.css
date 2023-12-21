@@ -479,11 +479,15 @@ nav ul .fa-solid{
     flex-basis: 100%; 
 }
 .bars-wrap {
-    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-50-gt-sm{
+    max-width: 100%;
+    flex: 1 1 100%;
 }
 .bar {
-    width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .contact-left, .contact-right{
     flex-basis: 100%;
