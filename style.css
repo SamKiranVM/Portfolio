@@ -402,6 +402,9 @@ nav .fa-solid{
 #about{
     padding: 10px 0;
 }
+#about .container{
+    padding-bottom: 20px;
+}
 .header-text {
     margin-top: 30%;
     font-size: 16px;   
@@ -475,7 +478,7 @@ nav ul .fa-solid{
     flex-basis: 100%; 
 }
 .bars-wrap {
-    margin: 50px auto 50px auto;
+    margin: 20px auto;
 }
 .bar {
     width: 100%;
