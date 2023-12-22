@@ -424,7 +424,7 @@ nav ul{
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -200px;
+    right: 0;
     width: 200px;
     height: 100vh;
     padding-top: 50px;
@@ -488,6 +488,7 @@ nav ul .fa-solid{
 }
 .bar {
     margin-bottom: 10px;
+    max-width: 100%;
 }
 .contact-left, .contact-right{
     flex-basis: 100%;
@@ -500,7 +501,7 @@ nav ul .fa-solid{
     font-size: 14px;
 }
 .site {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 #project {
