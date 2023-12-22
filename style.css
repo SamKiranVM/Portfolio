@@ -389,7 +389,7 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
-/* ~~~~~~~~~~~~~`Mobile Screen ~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~`Mobile Screen ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~ */
 nav .fa-solid{
     display: none;
 }
@@ -424,7 +424,7 @@ nav ul{
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -200px;
     width: 200px;
     height: 100vh;
     padding-top: 50px;
