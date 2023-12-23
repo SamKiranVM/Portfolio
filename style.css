@@ -396,25 +396,30 @@ nav .fa-solid{
 @media only screen and (max-width: 680px){
     
 #header{
-    background-image: url(assets/phone-me1.PNG);
+    background-image: url(assets/phone-me.png);
     height: 100vh;
 }
 #about{
-    height: 120dvh;
-    padding-top: 10px;
-    padding-bottom: 300px !important;
+    padding: 10px 0;
+    padding-bottom: 1500px;
+}
+.bars-wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.bar {
+    margin-bottom: 8px;
+    max-width: 100%;
+}
 
-}
-#about .container{
-    padding-bottom: 20px;
-}
 .header-text {
     margin-top: 30%;
     font-size: 16px;   
 }
 .header-text h1 {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .header-text .custom-button{
     margin-top: 5%;
@@ -445,12 +450,17 @@ nav ul .fa-solid{
     cursor: pointer;
 }
 #about {
-    height: 100vh;
+    height: 120dvh;
+    padding-top: 10px;
+    padding-bottom: 300px !important;
+
+}
+#about .container {
+    padding-bottom: 20px;
 }
 .about-title {
     font-size: 30px;
-    margin-top: 40px;
-    padding-left: 0;
+    margin-top: 20px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -483,18 +493,9 @@ nav ul .fa-solid{
     flex-basis: 100%; 
 }
 .bars-wrap {
-    flex-direction: column;
-    align-items: center;
     margin-top: 20px;
 }
-.flex-50-gt-sm{
-    max-width: 100%;
-    flex: 1 1 100%;
-}
-.bar {
-    margin-bottom: 8px;
-    max-width: 100%;
-}
+
 .contact-left, .contact-right{
     flex-basis: 100%;
     text-align: center;
