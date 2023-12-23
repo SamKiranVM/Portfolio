@@ -400,8 +400,8 @@ nav .fa-solid{
     height: 100vh;
 }
 #about{
-    padding: 10px 0;
-    padding-bottom: 100px !important;
+    padding-top: 10px;
+    padding-bottom: 300px !important;
 
 }
 #about .container{
